@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>melonJS - Test</title>
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+
+<body>
+  <!-- Canvas placeholder -->
+  <div id="screen"></div>
+
+  <!-- melonJS Library -->
+  <script type="text/javascript" src="js/melonjs.js"></script>
+
+  <!-- Game Scripts -->
+  <script type="text/javascript" src="js/game.js"></script>
+  <script type="text/javascript" src="js/play.js"></script>
+  <script type="text/javascript" src="js/player.js"></script>
+  <script type="text/javascript" src="js/enemyManager.js"></script>
+  <script type="text/javascript" src="js/enemy.js"></script>
+
+  <!-- Bootstrap -->
+  <script type="text/javascript">
+    document.addEventListener("animationend", game.clearPanelAnimation, false);
+    me.device.onReady(function onReady() {
+      game.onload();
+    });
+  </script>
+</body>
+
+</html>
